@@ -76,6 +76,7 @@ function gameReset(){
     resultbox.textContent="결과창";
     userinput.textContent="";
     chances=5;
+    history=[];
 }
 
 function clickbutton(){
