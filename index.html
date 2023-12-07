@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay>
+        <source src="/Users/soongils/Desktop/background.mp3" typle="audio/mp3">
+        재생불가
+    </audio>
+
+    <div>
+        <h1 class="gamename">숫자를 맞추어 봅시다!!</h1>
+    </div>
+    <div>
+         <div id="resultBox" class="showresult">결과창</div>
+         <input type="number" id="userInput" class="showinput">
+         
+    </div>
+    <div class="button-box">
+        <button id="gameButton" class="gobutton">GO</button>
+        <button id="resetButton" class="replaybutton">RESET</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="instruction">
+        <div class="main-con">
+        <div class="ins-name">- 게임규칙 -</div>
+        <br>
+        <br>
+        1.게임이 시작될 때 1-100사이의 임이의 숫자가 생선됩니다.유저는 생성된 숫자를 맞추셔야 하고 총 5번의 기회가 주어지며 5번내에 숫자를 맞추지 못하면 게임이 종료됩니다.
+        <br>
+        <br>
+        2.중복된 숫자를 입력했을 경우 기회가 감소되지 않습니다.
+        <br>
+        <br>
+        3.범위 밖의 숫자(1보다 작거나 100보다 큰 숫자)를 입력했을 경우 기회가 감소되지 않습니다.
+        </div>
+    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

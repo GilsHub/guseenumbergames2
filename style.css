@@ -1,0 +1,89 @@
+body{
+    margin:0px;
+    background-image:url("https://cdn.dynamicwallpaper.club/wallpapers/1fwttqzokh6/thumbs/1600/2.jpg");
+}
+@font-face {
+    font-family: 'GoryeongStrawberry';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.gobutton{
+    font-family: 'GoryeongStrawberry';
+    background:rgb(245, 147, 180);
+    font-size:40px;
+    font-weight:bold;
+    border-radius:10px;
+    border:none;
+    color:white;
+    padding-top:10px;
+    padding-bottom:5px;
+    padding-right:20px;
+    padding-left:20px;
+}
+.gobutton:hover{
+    background:pink;
+    color:rgb(245, 147, 180);
+    transition:0.2s;
+    
+}
+.replaybutton{
+    font-family: 'GoryeongStrawberry';
+    font-size:40px;
+    background:rgb(245, 198, 147);
+    color:rgb(253, 122, 82);
+    border-radius:10px;
+    font-weight:bold;
+    border:none;
+    padding-top:10px;
+    padding-bottom:5px;
+    padding-right:20px;
+    padding-left:20px;
+}
+.replaybutton:hover{
+    background:rgb(252, 236, 217);
+    color:rgb(245, 198, 147)
+}
+.button-box{
+    text-align:center;
+}
+h1{
+    font-family: 'GoryeongStrawberry';
+    font-size:60px;
+    font-weight:bold;
+    text-align:center;
+}
+.showinput{
+    font-size:40px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family: 'GoryeongStrawberry';
+
+}
+.showresult{
+    font-family: 'GoryeongStrawberry';
+    font-size:30px;
+    font-weight:bold;
+   text-align:center;
+}
+.instruction{
+    text-align:center;
+    
+    color:white;
+}
+.ins-name{
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+}
+.main-con{
+    height:100px;
+    
+    display:inline-block;
+    font-size:20px;
+    font-weight:bold;
+}
