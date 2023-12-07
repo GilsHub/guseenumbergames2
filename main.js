@@ -6,6 +6,7 @@ let playbutton=document.getElementById("gameButton");//플레이버튼
 let resetbutton=document.getElementById("resetButton");//리셋버튼
 let history=[];//입력했던 숫자 기록하기
 
+
 playbutton.addEventListener("click",playit);//클릭하면 playit함수가 실행
 resetbutton.addEventListener("click",gameReset);//클릭하면 RESET함수 실행
 userinput.addEventListener("focus",function(){
@@ -44,6 +45,8 @@ function playit(){
         gameOver();
     }
     else{
+        let successaudio=new Audio("success.mp3");
+        successaudio.play();
         resultbox.textContent="축하합니다.숫자를 맞추었습니다.";
         console.log("Congratulations!");
         playbutton.disabled=true;
@@ -56,6 +59,8 @@ function playit(){
 //게임 종료를 알려주는 함수.
 function gameOver(){
     if(chances<1){
+        let falseaudio=new Audio("false.mp3");
+        falseaudio.play();
         console.log("YOU LOSE!!"); 
         resultbox.textContent=`GAME OVER!!
         정확한 숫자는 ${cpuNumber} 이 였습니다.다시 시작할려면 [RESET] 버튼을 클릭해 주십시오.`;
@@ -73,4 +78,20 @@ function gameReset(){
     chances=5;
 }
 
+function clickbutton(){
+    let audio=new Audio("clicksound.mp3");
+    audio.play();
+}
+
+function mutemusic(){
+    let bgaudio=document.getElementById("backgroundmusic");
+    if(!bgaudio.paused){
+        bgaudio.pause();
+        isPlaying=false;
+    }
+    else{
+        bgaudio.play();
+        isPlaying=true;
+    }
+} 
 

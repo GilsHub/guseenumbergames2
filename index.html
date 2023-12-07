@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio autoplay>
-        <source src="/Users/soongils/Desktop/background.mp3" typle="audio/mp3">
-        재생불가
-    </audio>
-
+    
+    <audio src="background.mp3" id="backgroundmusic" autoplay></audio>
+    <div class="music-button">
+        <span>배경음악:</span>
+        <button id="muteButton" class="mutebutton" onclick="mutemusic(),clickbutton();">MUTE/ON</button>
+    </div>
+    
     <div>
         <h1 class="gamename">숫자를 맞추어 봅시다!!</h1>
     </div>
@@ -21,8 +23,9 @@
          
     </div>
     <div class="button-box">
-        <button id="gameButton" class="gobutton">GO</button>
-        <button id="resetButton" class="replaybutton">RESET</button>
+        <button id="gameButton" class="gobutton" onclick="clickbutton()">GO</button>
+        <button id="resetButton" class="replaybutton" onclick="clickbutton()">RESET</button>
+        
     </div>
     <br>
     <br>

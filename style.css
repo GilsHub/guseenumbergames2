@@ -8,6 +8,49 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+.music-button{
+    font-family: 'GoryeongStrawberry';
+    display:inline-block;
+    color:rgb(255, 238, 180);
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+    margin-left:10px;
+}
+.musicbutton{
+    font-family: 'GoryeongStrawberry';
+    border:none;
+    font-size:20px;
+    border-radius:5px;
+    font-weight:bold;
+    padding-top:5px;
+    padding-bottom:2px;
+    background:pink;
+    color:white;
+}
+.musicbutton:hover{
+    background:black;
+    color:pink;
+    transition:0.2s;
+
+}
+.mutebutton{
+    font-family: 'GoryeongStrawberry';
+    border:none;
+    font-size:20px;
+    border-radius:5px;
+    font-weight:bold;
+    padding-top:5px;
+    padding-bottom:2px;
+    background:pink;
+    color:white;
+}
+.mutebutton:hover{
+    background:black;
+    color:pink;
+    transition:0.2s;
+
+}
 .gobutton{
     font-family: 'GoryeongStrawberry';
     background:rgb(245, 147, 180);
