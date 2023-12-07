@@ -1,6 +1,9 @@
 body{
     margin:0px;
     background-image:url("https://cdn.dynamicwallpaper.club/wallpapers/1fwttqzokh6/thumbs/1600/2.jpg");
+     background-size: cover; 
+   background-repeat: no-repeat;
+   background-position: center;
 }
 @font-face {
     font-family: 'GoryeongStrawberry';
